@@ -11,24 +11,24 @@ coils:
 - address: 3
   mode: "W"
   slug: "digital-output-1-4"
-- address: 4
+- address: 1000
   mode: "RW"
-  slug: "digital-input-1-1"
-- address: 5
+  slug: "fpp140/falcon/player/FPP/event/01_01"
+- address: 1001
   mode: "RW"
-  slug: "digital-input-1-2"
-- address: 6
+  slug: "fpp140/falcon/player/FPP/event/02_01"
+- address: 1002
   mode: "RW"
-  slug: "digital-input-1-3"
-- address: 7
+  slug: "fpp140/falcon/player/FPP/event/01_02"
+- address: 1003
   mode: "RW"
-  slug: "digital-input-1-4"
-- address: 8
+  slug: "fpp140/falcon/player/FPP/event/02_02"
+- address: 1004
   mode: "RW"
-  slug: "user-programmable-led-x1"
-- address: 9
+  slug: "fpp140/falcon/player/FPP/event/01_03"
+- address: 1005
   mode: "RW"
-  slug: "user-programmable-led-x2"
+  slug: "fpp140/falcon/player/FPP/event/02_03"
 - address: 10
   mode: "RW"
   slug: "user-programmable-led-x3"
@@ -281,6 +281,6 @@ coils:
 - address: 1203
   mode: "RW"
   slug: "save-current-configuration-as-default-to-nv-ram-of-group-3"
-mqtt_broker_uri: "ssl://raspberrypi.lan:8883"
-mqtt_client_id: "modbridge"
-modbus_server_uri: "unipi.lan:502"
+mqtt_broker_uri: "192.168.1.30:1883"
+mqtt_client_id: "modbridgez"
+modbus_server_uri: "192.168.1.104:502"
